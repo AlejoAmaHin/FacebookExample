@@ -1,0 +1,313 @@
+/* https://www.facebook.com/alejoa2h */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f1f2f4;
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #1876f3;
+}
+
+ul, li {
+    list-style: none;
+}
+
+span {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+p {
+    padding-left: 10px;
+}
+
+/* Clases */
+.logo a {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 10px #96c2f8;
+}
+
+.header {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.logo {
+    grid-area: "logo";
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    font-size: 14px;
+    gap: 8px;
+    padding-right: 30px;
+    
+}
+
+.usuario input {
+    width: 188px;
+    border-radius: 4px;
+    height: 80%;
+    border: 1px solid rgb(160, 160, 160);
+    padding-left: 10px;
+}
+
+
+.iniciar {
+    height: 80%;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #1876f3;
+    color: #ffffff;
+    border-color: #1876f3;
+    font-size: 15px;
+}
+
+.portada {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#534438, #f2f1f0, #fefffe);
+    box-shadow: 1px 1px 2px #c9c8c89f, -1px -1px 2px #c9c8c89f;
+}
+
+/* sección de la "portada" */
+
+.image-portada {
+    width: 65%;
+    height: 350px;
+    background-image: url(images/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sub-portada {
+    width: 60%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.image-profile {
+    width: 25%;
+}
+
+.image-profile img{
+    width: 12vw;
+    height: 12vw;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.name {
+    width: 70%;
+    font-size: 1.3rem;
+}
+
+
+.amigos-fotos {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+    line-height: 1.33;
+    color: #7f8081;
+    
+    font-size: 1.3rem;
+}
+
+.amigos-fotos div {
+    width: 100px;
+    height: 50px;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.amigos-fotos div:hover {
+    background-color: #c9c8c89f;
+}
+
+/*   Main */
+.main {
+    display: flex;
+    *background-color: rgb(206, 155, 211); /* Estos color son para verlos po si se me pierden o me confundo */
+    flex-direction: row;
+    width: 60%;
+    height: 1000px;
+    margin: 15px;
+    border-radius: 10px;
+    gap: 2%;
+}
+
+.main .left {
+    width: 58%;
+    height: 100%;
+    *background-color: rgb(201, 36, 36);
+}
+.main .right {
+    width: 38%;
+    height: auto;
+    *background-color: rgb(108, 182, 93); 
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+    gap: 2%;
+}
+
+.informacion, .fotos {
+    width: 100%;
+    height: auto;
+}
+
+.amigos {
+    width: 100%;
+    height: 70%;    
+}
+
+/* Estilos en Común */
+
+.informacion, .fotos, .amigos {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #c9c8c89f, -1px -1px 2px #c9c8c89f;
+}
+
+/* Estilos de información y cajas */
+
+.informacion-contenedor {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+
+
+.cajas {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10%;
+    margin: 10px;
+}
+
+.cajas img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+/* Sección fotos */
+
+.titulo {
+    width: auto;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+.contenedor-fotos {
+    width: 95%;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+.cajas-fotos {
+    width: 32.55%;
+    gap: 0.6%;    
+}
+
+.cajas-fotos img {
+    width: 100%;
+    margin-right: 4px;
+    line-height: 1.34;
+    cursor: pointer;
+}
+
+.boton-verMas span {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e5e6ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: inherit;
+}
+
+.boton-verMas span:hover {
+    background-color: #d9dade;
+}
+
+.right .informacion-contenedor .cajas:hover {
+    background-color: #d9dadee5;
+    border-radius: 10px;
+}
+
+/* FIN  */
